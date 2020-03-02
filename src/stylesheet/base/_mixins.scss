@@ -1,0 +1,63 @@
+@mixin light_on($color) {
+  background: $color;
+  box-shadow: 0px 0px 3px $color;
+  -webkit-box-shadow: 0px 0px 3px $color;
+}
+
+@mixin box_shadow($x, $y, $z, $color) {
+  box-shadow: $x $y $z $color;
+  -webkit-box-shadow: $x $y $z $color;
+}
+
+@mixin inner_box_shadow($type, $w, $x, $y, $z, $color) {
+  box-shadow: $type $w $x $y $z $color;
+  -webkit-box-shadow: $type $w $x $y $z $color;
+}
+
+@mixin border_radius($val) {
+  border-radius: $val;
+  -webkit-border-radius: $val;
+}
+
+@mixin bordered_container($size, $type, $color) {
+  border: $size $type $color;
+}
+
+@mixin border_top_bottom($size, $type, $color) {
+  border-top: $size $type $color;
+  border-bottom: $size $type $color;
+}
+
+@mixin text_shadow($x, $y, $z, $color) {
+  text-shadow: $x $y $z $color;
+  -webkit-text-shadow: $x $y $z $color;
+}
+
+@mixin appearance_none {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+}
+
+@mixin grid_space_vertical($val) {
+  display: grid;
+  grid-gap: $val;
+}
+
+@mixin padded_container($size) {
+  padding: $size;
+}
+
+@mixin form_input_padding($vert, $horz) {
+  padding: $vert $horz;
+}
+
+@mixin button_details($bg, $color) {
+  background: $bg;
+  color: $color;
+  border-radius: 0.25em;
+}
+
+@mixin grid_container($size) {
+  display: grid;
+  grid-gap: $size;
+}

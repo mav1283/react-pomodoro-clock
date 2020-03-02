@@ -1,0 +1,13 @@
+#App-footer {
+  @include padded_container(1em);
+  @extend .dark-contrast;
+  @extend .flex-centered;
+  @extend .lighter-contrast-text;
+  @include inner_box_shadow(inset, 0, 0, 3px, 1px, var(--trans-light-semi));
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  p,
+  a {
+    @extend .text-small;
+  }
+}

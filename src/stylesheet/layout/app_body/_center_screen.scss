@@ -1,0 +1,5 @@
+.center-screen {
+  @include grid_container(0.5em);
+  grid-template-columns: auto 1fr auto;
+  justify-content: center;
+}

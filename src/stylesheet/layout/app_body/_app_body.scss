@@ -1,0 +1,7 @@
+#App-body {
+  @include padded_container(1em);
+  @include grid_space_vertical(0.5em);
+  @include border_top_bottom(2px, solid, var(--trans-dark));
+  @include inner_box_shadow(inset, 0, 0, 3px, 1px, var(--trans-light-semi));
+  @extend .dark-contrast;
+}

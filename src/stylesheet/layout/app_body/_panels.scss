@@ -1,0 +1,48 @@
+.panel {
+  @include bordered_container(1px, solid, var(--trans-dark));
+  @include padded_container(0.5em);
+  @include border_radius(0.3em);
+  @extend .dark-contrast;
+  .panel-label {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    @extend .lighter-contrast-text;
+  }
+  .panel-screen {
+    @include bordered_container(1px, solid, var(--trans-dark));
+    @include padded_container(0.5em);
+    @include border_radius(0.25em);
+    @extend .flex-centered;
+    @extend .light-screen;
+    width: 90px;
+  }
+  .panel-controls {
+    @include grid_container(0.5em);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.aside-panel {
+  @include grid_space_vertical(0.5em);
+}
+
+#center-panel {
+  @include padded_container(0.25em);
+  @extend .flex-centered;
+  min-width: 200px;
+  .clock-screen {
+    @include bordered_container(1px, solid, var(--trans-dark));
+    @include padded_container(1em);
+    @include border_radius(0.25em);
+    @extend .light-screen;
+    @extend .flex-centered;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 2em);
+    height: calc(100% - 2em);
+    .timer-label {
+      font-weight: 600;
+    }
+  }
+}

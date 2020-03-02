@@ -1,0 +1,5 @@
+.App {
+  @include bordered_container(1px, solid, var(--trans-dark));
+  @include border_radius(0.5em);
+  background: var(--midnight-blue);
+}

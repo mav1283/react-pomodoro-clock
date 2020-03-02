@@ -1,0 +1,8 @@
+#clock-switches {
+  @include grid_container(0.25em);
+  grid-template-columns: repeat(2, 1fr);
+  @include bordered_container(1px, solid, var(--trans-dark));
+  @include padded_container(0.25em);
+  @include border_radius(0.3em);
+  @extend .dark-contrast;
+}

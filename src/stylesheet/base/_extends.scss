@@ -1,0 +1,42 @@
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-small {
+  font-size: 0.75rem !important;
+}
+
+.dark-contrast {
+  background: var(--trans-dark);
+}
+
+.dark-contrast-text {
+  color: var(--trans-dark);
+}
+
+.darker-contrast-text {
+  color: var(--trans-darker);
+}
+
+.light-contrast {
+  background: var(--trans-light);
+}
+
+.lighter-contrast {
+  background: var(--trans-light-semi);
+}
+
+.light-contrast-text {
+  color: var(--trans-light);
+}
+
+.lighter-contrast-text {
+  color: var(--trans-lighter);
+}
+
+.light-screen {
+  background: var(--turquoise);
+  color: var(--trans-darker);
+}
