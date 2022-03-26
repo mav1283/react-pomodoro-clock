@@ -8,7 +8,7 @@
     "@testing-library/react": "^10.4.7",
     "@testing-library/user-event": "^12.0.11",
     "acorn": "^7.3.1",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "node-sass": "^4.14.1",
     "precise-interval": "^1.0.2",
     "react": "^16.13.1",
